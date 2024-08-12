@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+:root{
+    --primary-pink: hsl(322, 100%, 66%);
+    --primary-light-pink : hsl(321, 100%, 78%);
+    --primary-light-red: hsl(0, 100%, 63%);
+    --secondary-dark-cyan: hsl(192, 100%, 9%);
+    --secondary-pale-blue: hsl(207, 100%, 98%);
+
+}
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+}
+nav > button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border:  1px solid var(--primary-light-pink);
+    color: var(--primary-light-pink);
+    background-color: transparent;
+    box-shadow: 0 0 2px 0 var(--primary-light-pink);
+}
+
+.content{
+
+
+    margin-top: 130px;
+    margin-bottom: 130px;
+    text-align: center;
+    padding: 70px 10%;
+}
+.content > h1{
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.content > p{
+
+    padding: 0 10%;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-dark-cyan);
+
+}
+
+.content > button, .ready > button{
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+
+    background-color: var(--primary-pink);
+    color: var(--secondary-pale-blue);
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    
+}
+.screen-mockups{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.communities > h1, .messages > h1{
+    font-size: 64px;
+}
+.communities > p, .messages > p{
+    font-size: 16px;
+    color: #89939B;
+    padding-left: 10px;
+}
+.grow, .users{
+    position: relative;
+    margin-top: 150px;
+}
+.grow  img:nth-child(1), .users  img:nth-child(1){
+    display: none;
+}
+.grow > img, .users > img{
+    width: 100%;
+}
+.grow-text, .users-text{
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    padding: 0 100px;
+}
+.grow-text  > h1, .users-text > h1{
+    margin: 20px 0;
+    font-weight: 700;
+}
+.conversations{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.conversations > img{
+    width: 40%;
+    margin: 0 100px;
+}
+.conversations-text{
+    width: 40%;
+
+}
+.users-text{
+    top: 30%;
+}
+.ready{
+    text-align: center;
+    margin-top: 70px;
+
+}
+.footer{
+    margin-top: 100px;
+    color: #fff;
+   
+    background-image: url('./images/Footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+    height: 90vh;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 0 5%;
+    padding-top: 10%;
+
+}
+
+.footer-content > .logo{
+
+    margin-right: 30%;
+    text-align: left;
+}
+.footer-content > .logo > p{
+    margin:20px 0;
+    font-size: 14px;
+    font-weight: 200;
+
+}
+.phone, .mail{
+    display: flex;
+    margin-bottom: 10px;
+}
+.phone > img, .mail > img{
+    margin: 0 10px;
+}
+
+.news-letter  > h1{
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+.news-letter > p{
+    font-size: 14px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+.news-letter > input{
+    width: 240px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 20px 20px 0px 0px ;
+}
+.news-letter > button{
+    background-color: var(--primary-pink);
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.socials{
+    position: relative;
+    bottom: 10%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.5rem;
+    padding-left: 70px;
+}
+.socials i{
+    margin: 0 10px;
+
+}
+@media only screen and (max-width:375px) {
+    nav{
+        padding: 30px 20px;
+    }
+    nav > img{
+        width: 50%;
+    }
+    .content{
+
+        padding: 70px 20px;
+    }
+    .content > h1{
+        font-size: 24px;
+        width: 100%;
+
+    }
+    .content > p{
+        padding: 0 10%;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-dark-cyan);
+    }
+    .content  >button{
+        width: 80%;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .communities, .messages{
+        margin: 60px;
+    }
+    .grow{
+        position: relative;
+    }
+    .grow img:nth-child(2), .users img:nth-child(2){
+        display: none;
+    }
+    .grow  img:nth-child(1), .users  img:nth-child(1){
+        display: block;
+    }
+
+    .grow-text, .users-text, .conversations-text{
+        position: relative;
+        top: 0%;
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 30px;
+    }
+    .conversations{
+        display: flex;
+        flex-direction: column;
+    }
+    .conversations > img, .grow > img, .users > img{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+   .footer{
+    margin-top: 100px;
+    color: #fff;
+   
+    background-image: url('./images/Footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+    height: 120vh;
+    text-align: center;
+    
+}
+.footer-content > .logo{
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin: 5% 0;
+}
+.news-letter{
+    margin-top: 80px;
+
+
+}
+.news-letter  > input{
+    margin: 30px 0;
+}
+.news-letter > button{
+    position: relative;
+    left: 19%;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+
+}
+.socials{
+    position: relative ;
+    bottom: 8%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+    
+}
